@@ -33,9 +33,9 @@ https://atmarkit.itmedia.co.jp/ait/articles/1805/11/news035.html
 - メインの機能には影響がないが，exe化に伴う誤作動がいくつかある．
 - [ここ](https://github.com/hokudai-paleo/yeti/releases)からyeti.zipをダウンロードする．
 - フォルダの置き場所はどこでも良い．
-- `yeti/dist/main.exe`をクリックして起動．
+- `yeti/dist/main/main.exe`をクリックして起動．
 - ショートカットを作ると便利．
-- ログファイルは`yeti/dist/logs`内に作られる．
+- ログファイルは`yeti/dist/main/logs`内に作られる．
 - アンインストールしたいときはyetiフォルダを削除すればOK
 ## スクリプトからGUI実行
 - `python main.py`
