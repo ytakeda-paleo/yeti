@@ -6,9 +6,11 @@ Image processing, generate animation, etc
 - ImageJにある不満点を解消する．
 - タイムパフォーマンス: 無駄なファイル読み込み時間を無くす．可能な限りマルチスレッドによる高速処理を行う．
 - 画像データのトレーサビリティ: 操作内容をログに保存する．
+- CUI処理も可能とする．
 
 # 現在できること
-- アニメーション作成
+- (GUI)アニメーション作成
+- (CUI)トリミング，拡張子変換
 
 # 使い方
 ## ffmpeg
@@ -29,8 +31,25 @@ https://atmarkit.itmedia.co.jp/ait/articles/1805/11/news035.html
 - フォルダの置き場所はどこでも良い．
 - ショートカット(yeti.exe)をデスクトップに置くと便利．
 - アンインストールしたいときはフォルダを削除すればOK．
-## スクリプトから実行
+## スクリプトからGUI実行
 - `python main.py`
+## CUI操作
+```python
+from imageprocess import ImageProcess as im
+
+inputdir = r"C:\hogehoge\imagedir"
+data1 = im(inputdir) # This is the general way
+data1 = im(inputdir, ["*.png","*.tif"]) # If various file types are in the directory, you can exclude the file type(s) to input
+
+print(data1.filelist) # if you want to see the filelist
+print(data1.nfiles) # if you want to see the number of files
+
+outputdir = r"C:\hogehoge\outputdir"
+
+data1.ConvertMultiImages(outputdir, "png") # You can skip "png", default=tif
+data1.TrimMultiImages(500,600,700,800,50,60,outputdir, "jpg") # You can skip "jpg", default=tif
+                     #(x1, x2, y1, y2, z1, z2, outputdir, outputfiletype)
+```
 
 
 # etymology
