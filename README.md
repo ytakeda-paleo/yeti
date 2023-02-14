@@ -45,7 +45,7 @@ from imageprocess import ImageProcess as im
 
 inputdir = r"C:\hogehoge\imagedir"
 data1 = im(inputdir) # This is the general way
-data1 = im(inputdir, ["*.png","*.tif"]) # If various file types are in the directory, you can exclude the file type(s) to input
+data1 = im(inputdir, ["*.png","*.tif"]) # If various file types are in the directory, you can limit the file type(s) to input
 
 print(data1.filelist) # if you want to see the filelist
 print(data1.nfiles) # if you want to see the number of files
