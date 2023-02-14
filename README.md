@@ -60,4 +60,5 @@ data1.TrimMultiImages(500,600,700,800,50,60,outputdir, "jpg") # You can skip "jp
 # etymology
 - パワフルな処理
 - ログ（footprint）を残す
+- 雪山をスキーで滑るかのようにスムースな操作性（を目指す）
 - **YET** another **I**mageJ
