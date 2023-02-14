@@ -1,6 +1,6 @@
 # yeti
-Image processing, generate animation, etc
-![yeti-1](https://user-images.githubusercontent.com/61795460/218634280-9be53bf9-5fe8-4a77-bb82-18ddf6692f60.png)
+Image processing, generate animation, etc   
+![yeti-1](https://user-images.githubusercontent.com/61795460/218634393-d48fac83-5b90-4ec7-9860-59b73c62a80f.png)
 
 # 目的とできること（未実装な部分も含む全体像）
 - トモグラフィ画像に関する様々なこと（アニメーション作成を含む）の処理をGUIで簡単操作する．
