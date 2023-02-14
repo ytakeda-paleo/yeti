@@ -11,7 +11,8 @@ Image processing, generate animation, etc
 
 # 使い方
 ## ffmpeg
-- 別途ダウンロード，PATH設定が必要．
+- 別途ダウンロード，PATH設定が必要．  
+https://www.gyan.dev/ffmpeg/builds/
 ## 実行ファイルを使う方法
 - [ここ](https://github.com/hokudai-paleo/yeti/releases)からzipをダウンロードする．
 ## スクリプトから実行
