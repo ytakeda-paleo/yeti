@@ -28,6 +28,7 @@ C:\
 https://atmarkit.itmedia.co.jp/ait/articles/1805/11/news035.html
 ## スクリプトからGUI実行
 - `python main.py`
+- 各種ライブラリのインストールが必要．
 - ログファイルはリポジトリ内のLogsフォルダに保存される．
 
 ## 実行ファイルを使う方法
