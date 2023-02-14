@@ -12,7 +12,7 @@ Image processing, generate animation, etc
 # 現在できること
 - (GUI)アニメーション作成
 - (CUI)トリミング，拡張子変換
-![image](https://user-images.githubusercontent.com/61795460/218637125-4efcbc98-f09f-43b7-952e-9fafcf45431b.png)
+![image](https://user-images.githubusercontent.com/61795460/218638281-c3ef9bec-6786-4842-b73f-a55437ac672b.png)
 
 
 # 使い方
