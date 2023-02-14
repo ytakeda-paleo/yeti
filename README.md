@@ -27,18 +27,18 @@ C:\
 ```
 - `C:\ffmpeg\bin`, `C:\ffmpeg\doc`,`C:\ffmpeg\presets`にPATHを通す．    
 https://atmarkit.itmedia.co.jp/ait/articles/1805/11/news035.html
+## 実行ファイルを使う方法
+- メインの機能には影響がないが，exe化に伴う誤作動がいくつかある．
+- [ここ](https://github.com/hokudai-paleo/yeti/releases)からyeti.zipをダウンロードする．
+- フォルダの置き場所はどこでも良い．
+- `yeti/dst/main.exe`をクリックして起動．
+- ショートカットを作ると便利．
+- ログファイルは`yeti/dist/logs`内に作られる．
+- アンインストールしたいときはyetiフォルダを削除すればOK
 ## スクリプトからGUI実行
 - `python main.py`
 - 各種ライブラリのインストールが必要．
 - ログファイルはリポジトリ内のLogsフォルダに保存される．
-
-## 実行ファイルを使う方法
-- exe化に伴う誤作動がいくつかある．
-- [ここ](https://github.com/hokudai-paleo/yeti/releases)からyeti.zipをダウンロードする．
-- フォルダの置き場所はどこでも良い．
-- ショートカット(yeti.exe)をデスクトップに置くと便利．
-- アンインストールしたいときはフォルダを削除すればOK．
-
 ## CUI操作
 ```python
 from imageprocess import ImageProcess as im
