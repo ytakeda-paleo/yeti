@@ -69,6 +69,8 @@ data1.TrimMultiImages(500,600,700,800,50,60,outputdir, "jpg") # You can skip "jp
 
 # Known issues and things to be fixed
 - ファイル選択時にクリックした画像から画像情報を取得する．`initial image info` >> `clicked image info`
+- ffmpegをzipに含める．
+        - ライセンスの問題？      
 
 # For coders
 - exe-fication: `pyinstaller main.py --noconsole -i .\icon.ico -n yeti`
