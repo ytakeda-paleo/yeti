@@ -34,7 +34,7 @@ https://atmarkit.itmedia.co.jp/ait/articles/1805/11/news035.html
 - [ここ](https://github.com/hokudai-paleo/yeti/releases)から最新版の`yeti.zip`をダウンロードする．
 - フォルダの置き場所はどこでも良い．
 - `yeti/dist/main/yeti.exe`をクリックして起動．
-- `yeti.exe`の置き場所を変えるとアプリは動かなくなる．置き場所を変えたい場合はショートカットを作成すること．
+- `yeti.exe`を`main`フォルダから移動するとアプリは動かなくなる．ショートカットを作成することで対応してほしい．
 - ログファイルは`yeti/dist/main/logs`内に作られる．
 - アンインストールしたいときはyetiフォルダを削除すればOK
 ## スクリプトからGUI実行
