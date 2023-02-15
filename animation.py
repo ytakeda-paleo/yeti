@@ -94,12 +94,15 @@ class Animation:
             caption = Animation.Caption_Animation(self, initial_image, nfiles)
         else:
             caption = ""
+
         command = 'ffmpeg -f concat -r 15 -safe 0 '\
         + ' -i '  + str(ffmpeg_concat_path) + ' -r ' + str(self.fps)\
         + ' -s ' + str(self.size_X) + 'x' + str(self.size_Y)\
         + ' -an -pix_fmt yuv420p -vcodec mjpeg -b:v 600000000000000'\
         + str(caption)\
         + ' "' + str(self.output) + '"'
+
+
 
         with open(ssmtemp, mode='a') as file:
                 file.write('\n'+"#"+str(command))
@@ -141,17 +144,20 @@ class Animation:
 
 
         def progre():
-
-            p = subprocess.Popen(command, stdout=subprocess.PIPE, stderr=subprocess.STDOUT,shell=True,universal_newlines=True)#, preexec_fn=os.setsid)
-
+            if os.path.basename(sys.executable) == "python.exe":
+                p = subprocess.Popen(command, stdout=subprocess.PIPE, stderr=subprocess.STDOUT,universal_newlines=True)#, preexec_fn=os.setsid)
+            elif os.path.basename(sys.executable) == "yeti.exe":
+                p = subprocess.Popen(command, stdout=subprocess.PIPE, stderr=subprocess.STDOUT,universal_newlines=True, creationflags=subprocess.CREATE_NO_WINDOW)#, preexec_fn=os.setsid)
+            #,shell=True,
             def cancel_animation():
-                os.kill(p.pid, signal.CTRL_C_EVENT)
                 cancel_button.configure(state = "disabled")
+                os.kill(p.pid, signal.CTRL_C_EVENT)
                 for line in p.stdout:
                     try:
                         info.insert(tk.END, line)
                         info.see("end")
                     except KeyboardInterrupt:
+                        #print("keyboard")
                         pass
                 progress.protocol("WM_DELETE_WINDOW", "")
                 outputlog = info.get("1.0", "end")
@@ -186,7 +192,7 @@ class Animation:
                 #print('done')
                 if cancel_button['state'] == "disabled":
                     text["text"] = "Abort!"
-                    text2["text"] = "Cancel button pushed. No animation file saved."
+                    text2["text"] = "Job cancelled. No animation file saved."
                 else:
                     text["text"] = "Done!"
                     text2["text"] = "Animation saved as: " + str(self.output)
@@ -196,6 +202,7 @@ class Animation:
                 outputlog = info.get("1.0", "end")
                 with open(ssmtemp, mode='a') as file:
                     file.write('\n'+ outputlog+'\n')
+
 
 
 
