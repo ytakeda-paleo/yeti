@@ -67,7 +67,6 @@ data1.TrimMultiImages(500,600,700,800,50,60,outputdir, "jpg") # You can skip "jp
 - **YET** another **I**mageJ
 
 # Known issues and things to be fixed
-- exeで`-noconsole`だからCtrl+Cによるキャンセル処理が無効化されている．
 - ファイル選択時にクリックした画像から画像情報を取得する．`initial image info` >> `clicked image info`
 
 # For coders
