@@ -73,5 +73,9 @@ data1.TrimMultiImages(500,600,700,800,50,60,outputdir, "jpg") # You can skip "jp
         - ライセンスの問題？      
 - Mac版を作る？
 
+# feedbacks(thanks!)
+- トリミングでは画像上に矩形をドラッグできてほしい
+- logは入力フォルダ内に残せるようにしてほしい（選択できるようにする）
+- アニメーションのナンバリングは番号だけもありえる
 # For coders
 - exe-fication: `pyinstaller main.py --noconsole -i .\icon.ico -n yeti`
