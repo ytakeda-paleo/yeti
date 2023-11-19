@@ -7,12 +7,12 @@ from time import time
 # USAGE
 # from imageprocess import ImageProcess as im
 
-# inputdir = r"C:\Users\Yusuke TAKEDA\Downloads\t e"
+# inputdir = r"C:\Users\hogehoge\t e"
 # data1 = im(inputdir)
 # print(data1.filelist) # if you want to see the filelist
 # print(data1.nfiles) # if you want to see the number of files
 
-# outputdir = r"C:\Users\Yusuke TAKEDA\Downloads\dst2"
+# outputdir = r"C:\Users\hogehoge\dst2"
 
 # data1.ConvertMultiImages(outputdir, "png") # You can skip "png"
 # data1.TrimMultiImages(500,600,700,800,50,60,outputdir, "jpg") # You can skip "jpg"
