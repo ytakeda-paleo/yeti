@@ -78,3 +78,4 @@ data1.TrimMultiImages(500,600,700,800,50,60,outputdir, "jpg") # You can skip "jp
 - アニメーションのナンバリングは番号だけもありえる
 # For coders
 - exe-fication: `pyinstaller main.py --noconsole -i .\icon.ico -n yeti`
+- ffmpegとtkinterに関するtips: https://qiita.com/ytakeda-paleo/items/c3d33aef9d1c715702de
