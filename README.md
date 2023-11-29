@@ -38,7 +38,7 @@ https://atmarkit.itmedia.co.jp/ait/articles/1805/11/news035.html
 - ログファイルは`yeti/dist/main/logs`内に作られる．
 - アンインストールしたいときはyetiフォルダを削除すればOK
 ## スクリプトからGUI実行
-- `git clone https://github.com/hokudai-paleo/yeti.git`
+- `git clone https://github.com/ytakeda-paleo/yeti.git`
 - `python main.py`
 - 各種ライブラリのインストールが必要．
 - ログファイルはリポジトリ内のlogsフォルダに保存される．
